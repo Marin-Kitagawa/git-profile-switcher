@@ -1,4 +1,5 @@
-# Git Profile Switche
+# Git Profile Switcher
+
 Used to switch between different `git` profiles or configurations easily.
 
 ## Usage
