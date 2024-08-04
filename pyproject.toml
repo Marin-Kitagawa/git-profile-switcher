@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "git-profile-switcher"
+version = "0.1.0"
+description = "A Python CLI tool for switching git profiles easily"
+authors = ["Marin Kitagawa <49131888+Marin-Kitagawa@users.noreply.github.com>"]
+license = "GNU GPL-3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rich = "^13.7.1"
+typer = "^0.12.3"
+tomlkit = "^0.13.0"
+rich-menu = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
