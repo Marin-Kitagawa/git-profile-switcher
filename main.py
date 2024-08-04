@@ -17,7 +17,12 @@ CONFIG_DIR = f"{HOME}/.git-profile"
 config_dir = Path(CONFIG_DIR)
 
 @app.command()
-def create(profile_name: str = "default", username: str = "default-user", email: str = "", signingkey: str = ""):
+def create(
+    profile_name: str = typer.Option("default", help="The name of the git profile. For e.g., work. The default name for the profile will be `default`. If a profile name is not provided, the existing default profile will be replaced."), 
+    username: str = typer.Option("default-user", help="The username to be used in this git profile. Default value will be `default-user`"),
+    email: str = typer.Option(help="The email address to be used in the git profile. This field is required."), 
+    signingkey: str = typer.Option("", help="The signing key to be used in this git profile. Must be a string. If you're using SSH key, copy the contents of the public key here.")
+):
     if not config_dir.exists():
         config_dir.mkdir(parents=True)
     config = {
