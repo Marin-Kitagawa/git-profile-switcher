@@ -1,3 +1,5 @@
+![git](https://github.com/user-attachments/assets/dbff33a0-d63b-4b86-ac64-7c1c210a1515)
+
 # Git Profile Switcher
 
 Used to switch between different `git` profiles or configurations easily.
